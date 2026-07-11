@@ -11,10 +11,11 @@ app.get("/manifest.json", (req, res) => {
     id: "org.jaatog.addon",
     version: "1.0.0",
     name: "JaatOG Addon",
-    description: "Personal Movies & Series",
+    description: "Personal Movie Addon",
     resources: ["stream", "meta"],
-    types: ["movie", "series"],
-    catalogs: []
+    types: ["movie"],
+    catalogs: [],
+    idPrefixes: ["tt"]
   });
 });
 
