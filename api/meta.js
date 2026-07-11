@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
 
   if (!imdbId) {
     return res.status(400).json({
-      error: "Missing IMDb ID",
+      error: "IMDb ID missing"
     });
   }
 
@@ -14,14 +14,14 @@ module.exports = async (req, res) => {
 
     if (!movie) {
       return res.status(404).json({
-        error: "Movie not found",
+        error: "Movie not found"
       });
     }
 
-    return res.json(movie);
-  } catch (e) {
-    return res.status(500).json({
-      error: e.message,
+    res.json(movie);
+  } catch (err) {
+    res.status(500).json({
+      error: err.message
     });
   }
 };
