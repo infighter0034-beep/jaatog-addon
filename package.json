@@ -1,8 +1,8 @@
 {
   "name": "jaatog-addon",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "express": "^4.19.2",
     "axios": "^1.11.0"
   }
 }
