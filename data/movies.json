@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "imdb": "tt0111161",
+    "streams": [
+      {
+        "quality": "1080p",
+        "audio": "Hindi",
+        "url": "https://example.com/shawshank-1080-hindi.m3u8"
+      },
+      {
+        "quality": "720p",
+        "audio": "English",
+        "url": "https://example.com/shawshank-720-eng.m3u8"
+      }
+    ]
+  }
+]
